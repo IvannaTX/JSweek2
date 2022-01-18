@@ -13,7 +13,7 @@ Print a string to the console with the variable from step 3 ( e.g. Is Tom’s BM
 
 TomBMI = 8 / (9 * 9);
 JerryBMI = 45 / (10 * 10);
-
+//calculating BMI^^
 if(TomBMI > JerryBMI){
   console.log('Tom\'s BMI is bigger than Jerry\'s');
 }
