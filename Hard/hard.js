@@ -11,7 +11,7 @@ Create a Boolean variable containing information about whether Tom has a higher 
 Print a string to the console with the variable from step 3 ( e.g. Is Tom’s BMI higher than Jerry’s? false). */
 
 
-TomBMI = 8 / (9 * 9);
+/*TomBMI = 8 / (9 * 9);
 JerryBMI = 45 / (10 * 10);
 //calculating BMI^^
 if(TomBMI > JerryBMI){
@@ -19,6 +19,25 @@ if(TomBMI > JerryBMI){
 }
 else {
   console.log('Jerry\'s BMI is bigger than Tom\'s BMI');
+}**This was my original code until I realized the height & weight had to be variables*/
+
+
+let tomHeight = 9;
+let tomMass = 8;
+let jerryHeight = 10;
+let jerryMass = 45;
+
+function bmi (height, mass) {
+    return (mass/(height * height));
+}
+
+if (bmi(tomHeight, tomMass) > bmi(jerryHeight, jerryMass)){
+    let higherBMI = false;
+    console.log(`Jerry's BMI is higher than Tom: ${higherBMI}`)
+}
+else {
+    let higherBMI = true;
+    console.log(`Jerry's BMI is higher than Tom: ${higherBMI}`)
 }
 
 
